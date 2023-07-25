@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: linear-gradient(79deg,#a275ef);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-form-container, .login-form ,.register-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 20px) {
+  .auth-form-container {
+    padding: 30px;
+    border: 1px solid rgb(177, 69, 69);
+    border-radius: 15px;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #e786a0;
+    overflow: hidden;
+    width:250px;
+    box-align:center;
+    margin-top: 120px;
+  }
+  .container{
+    padding: 30px;
+    border: 1px solid rgb(177, 69, 69);
+    border-radius: 15px;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    width:250px;
+    box-align:center;
+    margin-top: 120px;
+    background-color: #f0d0d9;
+  }
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  text-align: left;
+  padding: 5px;
+}
+
+input {
+  margin:5px;
+  padding: 10px;
+  border: rgb(22, 21, 21);
+  border-radius: 10px;
+  width:200px;
+}
+
+button {
+  border: none;
+  background-color: rgb(108, 104, 226);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #f9f7fb;
+  text-align: center;
+  width:70px;
+}
+
+.link-btn {
+  background: none;
+  text-decoration: underline;
+  width:300px;
+  text-align: center;
+  color:rgba(48, 48, 154, 0.765);
+}
+
+
+
+
+.column1{
+  float: left;
+  margin: 10px;
+  margin-top: 100px;
+  margin-left:200px ;
+  
+}
+.column2{
+  float: right;
+  margin-left:100px ;
+  margin-top: 100px;
+  
+}
+/* Clearfix (clear floats) */
+.row{
+  
+  display: flex;
+  max-width:100px;
+  height:100px;
+}
+
+.center {
+  margin: auto;
+  width: 250px;
+  height: 150px;
+  margin-top: 250px;
+  background-color: #d2c3ec;
+  padding: 10px;
+  font-size: x-large;
 }
