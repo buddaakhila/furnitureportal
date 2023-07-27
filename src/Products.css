@@ -175,4 +175,16 @@
   .footer .social .fa + .fa {
     margin-left: 15px;
   }
+  .icon-cart{
+    height: 20px;
+    width: 20px;
+    color:rgb(21, 21, 21);
+  }
+  .icon-home{
+    font-size: 20px;
+   }
+   .log{
+    font-size: 20px;
+   }
+  
   /*# sourceMappingURL=App.css.map */

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
 import "./App.css";
+import { FaHome } from "react-icons/fa";
 
 export const Login = (props) => {
     const [username, setUsername] = useState('');
@@ -55,7 +56,7 @@ export const Login = (props) => {
 
   <li>
 
-    <a href="/">Home</a>
+    <a href="/" className="icon-home"><FaHome/></a>
 
   </li>
   

@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./Home";
 import './App.css';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Login } from './Login';
 import { Register } from "./Register";
@@ -9,6 +10,7 @@ import { Navbar } from "./Navbar";
 import { Products } from "./Products";
 import { ShoppingCart } from "./ShoppingCart";
 import {Final} from "./Final";
+import { Crud } from "./Crud";
 function App() {
   return (
     
@@ -22,7 +24,7 @@ function App() {
         <Route path='/Products' element={<Products />}></Route>
         <Route path='/ShoppingCart' element={<ShoppingCart />}></Route>
         <Route path='/Final' element={<Final />}></Route>
-        
+        <Route path='/Crud' element={<Crud />}></Route>
         </Routes>
     </BrowserRouter>
   )

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import "./App.css";
+import { FaHome } from 'react-icons/fa';
 export function Register() {
     const [inputData, setInputData] = useState({
         username: '',
@@ -41,7 +42,7 @@ export function Register() {
 
   <li>
 
-    <a href="/">Home</a>
+    <a href="/" className='icon-home'><FaHome/></a>
 
   </li>
   

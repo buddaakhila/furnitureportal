@@ -1,7 +1,8 @@
 import React from 'react'
-import "./App.css";
+import "./Home.css";
 import Admin from './Admin.jpg'
 import user from './user.jpg'
+import { FaHome } from 'react-icons/fa';
 function Home(){
 
     return (
@@ -22,7 +23,7 @@ function Home(){
 
   <li>
 
-    <a href="/">Home</a>
+    <a href="/" class="icon-home"><FaHome/></a>
 
   </li>
   

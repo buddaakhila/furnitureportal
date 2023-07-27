@@ -1,0 +1,79 @@
+.one, .login-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    float: left;
+  
+}
+.two, .login-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    float: left;
+  
+}
+
+
+  
+  @media screen and (min-width: 20px) {
+    .one {
+      padding: 30px;
+      border: 1px solid rgb(177, 69, 69);
+      border-radius: 15px;
+      margin:auto;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: #c7e8f3;
+      overflow: hidden;
+      width:250px;
+      box-align:center;
+      margin-top: 120px;
+      margin-left: 150px;
+    }
+    .two {
+        padding: 30px;
+        border: 1px solid rgb(177, 69, 69);
+        border-radius: 15px;
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background-color: #c7e8f3;
+        overflow: hidden;
+        width:250px;
+        box-align:center;
+        margin-top: 120px;
+        margin-left: 350px;
+      }
+      
+}
+label {
+    text-align: left;
+    padding: 5px;
+    
+  }
+  
+  input {
+    margin:5px;
+    padding: 10px;
+    border: rgb(22, 21, 21);
+    border-radius: 10px;
+    width:200px;
+
+  }
+  
+  button {
+    border: none;
+    background-color: rgb(22, 119, 230);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f9f7fb;
+    text-align: center;
+    width:70px;
+  }
+  .icon-home{
+    font-size: 20px;
+   }
+  

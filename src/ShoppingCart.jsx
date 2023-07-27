@@ -2,6 +2,7 @@ import React from "react";
 import { useCart } from 'react-use-cart';
 import {Link} from "react-router-dom";
 import "./cart.css";
+import { FaSignOutAlt, FaTrash } from "react-icons/fa";
 
 export const ShoppingCart = () => {
   const {
@@ -42,7 +43,7 @@ export const ShoppingCart = () => {
 
           <li>
 
-           <Link to="/">Logout</Link>
+           <Link to="/" className="log"><FaSignOutAlt/></Link>
 
           </li>
 
@@ -70,19 +71,19 @@ export const ShoppingCart = () => {
                 ₹{item.price}
                 </td>
                 <td>
-                <button onClick={() => updateItemQuantity(item.id, item.quantity - 1)}>
+                <button style={{width:"30px"}}onClick={() => updateItemQuantity(item.id, item.quantity - 1)}>
                   -
                 </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
                 
-                <button >{item.quantity}</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button style={{width:"30px"}} >{item.quantity}</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
-                <button onClick={() => updateItemQuantity(item.id, item.quantity + 1)}>
+                <button style={{width:"30px"}}onClick={() => updateItemQuantity(item.id, item.quantity + 1)}>
                  +
                 </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </td>
-                <td>
-                <button style={{width:"100px"}}onClick={() => removeItem(item.id)}>Remove Item</button>
+                
+                
+                <button style={{color:'white',width:"30px"}} onClick={() => removeItem(item.id)}><FaTrash/></button>
                 </td>
                 </tr>
                 

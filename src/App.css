@@ -17,26 +17,13 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-color: #e786a0;
+    background-color: #a8d3e7;
     overflow: hidden;
     width:250px;
     box-align:center;
     margin-top: 120px;
   }
-  .container{
-    padding: 30px;
-    border: 1px solid rgb(177, 69, 69);
-    border-radius: 15px;
-    margin:auto;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    overflow: hidden;
-    width:250px;
-    box-align:center;
-    margin-top: 120px;
-    background-color: #f0d0d9;
-  }
+  
   
 }
 
@@ -52,6 +39,9 @@ input {
   border-radius: 10px;
   width:200px;
 }
+.icon-home{
+  font-size: 20px;
+ }
 
 button {
   border: none;
@@ -75,26 +65,7 @@ button {
 
 
 
-.column1{
-  float: left;
-  margin: 10px;
-  margin-top: 100px;
-  margin-left:200px ;
-  
-}
-.column2{
-  float: right;
-  margin-left:100px ;
-  margin-top: 100px;
-  
-}
-/* Clearfix (clear floats) */
-.row{
-  
-  display: flex;
-  max-width:100px;
-  height:100px;
-}
+
 
 .center {
   margin: auto;

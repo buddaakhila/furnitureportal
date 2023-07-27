@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
+import { FaHome } from "react-icons/fa";
 
 export const Admin = (props) => {
     const [username, setUsername] = useState('');
@@ -30,7 +31,7 @@ export const Admin = (props) => {
         }
       };
       if (isLoggedIn) {
-        window.location.href='/';
+        window.location.href='/Crud';
         }
        
         
@@ -56,7 +57,7 @@ export const Admin = (props) => {
 
   <li>
 
-    <a href="/">Home</a>
+    <a href="/" className="icon-home"><FaHome/></a>
 
   </li>
   
@@ -77,8 +78,7 @@ export const Admin = (props) => {
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"  />
                 <button type="submit" style={{width:'60px'}}>Log In</button>
             </form>
-            <button className="link-btn"><Link to="/Register" style={{textDecoration:'none'}}>Don't have an account? Register here.</Link></button>
-        </div>
+                    </div>
         </body>
     )
 }

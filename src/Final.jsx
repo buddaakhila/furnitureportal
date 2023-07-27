@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import thank from "./thank.jpg"
+import { FaSignOutAlt } from "react-icons/fa";
+import "./Navbar.css";
 export const Final=()=>{
     return(
         <body>
@@ -26,7 +28,7 @@ export const Final=()=>{
   </li>
   <li>
 
-           <Link to="/">Logout</Link>
+           <Link to="/" className="log"><FaSignOutAlt/></Link>
 
           </li>
   

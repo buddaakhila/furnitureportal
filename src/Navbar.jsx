@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Navbar.css';
 import sofa from './sofa.jpg';
+import { FaHome, FaSignInAlt } from 'react-icons/fa';
 
 
 
@@ -26,12 +27,12 @@ export const Navbar = () => {
 
         <li>
 
-          <a href="/">Home</a>
+          <a href="/" className='icon-home'><FaHome/></a>
 
         </li>
         <li>
 
-      <a href="/Home">Log In</a>
+      <a href="/Home" className='log'><FaSignInAlt/></a>
 
       </li>
         

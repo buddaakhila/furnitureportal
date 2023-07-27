@@ -26,8 +26,12 @@
 
   }
 
- 
-
+ .icon-home{
+  font-size: 20px;
+ }
+.log{
+  font-size: 20px;
+}
   .nav-links {
 
     display: flex;
@@ -60,7 +64,7 @@
 
   .nav-links a:hover {
 
-    background-color: #fcf9f9;
+    background-color: #6f89f1;
 
     border-radius: 5px;
 

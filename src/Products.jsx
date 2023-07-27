@@ -3,6 +3,8 @@ import product_card from "./product_data";
 import "./Products.css";
 import { Link } from 'react-router-dom';
 import { useCart } from 'react-use-cart';
+import { FaCartPlus, FaSignOutAlt } from "react-icons/fa";
+import { FaHome } from 'react-icons/fa';
 export const Products = () => {
   // const [cartItems, setCartItems] = useState([]);
   // const addToCart = (item) => {
@@ -45,18 +47,24 @@ export const Products = () => {
            
              
 
-           
+        <li>
 
+<a href="/" className='icon-home'><FaHome/></a>
+
+</li>
+
+          
+         
           <li>
 
-           <Link to="/ShoppingCart">Cart</Link>
+           <Link to="/ShoppingCart"><FaCartPlus className='icon-cart'/></Link>
 
           </li>
           <li>
 
-           <Link to="/">Logout</Link>
+<Link to="/" className='log'><FaSignOutAlt/></Link>
 
-          </li>
+</li>
 
         </ul>
 
